@@ -25,8 +25,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
 
-  <body>
-    <title>Authors Haven</title>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Authors Haven</title>
+</head>
+
+<body>
+  <header>
     <div class="navbar-fixed ">
       <nav class="white z-depth-0">
         <div class="container">
@@ -246,48 +258,62 @@
         <li><a href="">Profile</a></li>
         <li><a href="">Home</a></li>
     </ul>
+  </header>
 
-  <!-- profile details----->
-<div class="profile-header">
-  <div class="container row">
-        <h4 class="col offset-s2">Mary Jane</h4>
-        <button class ="waves-effect waves-light btn white grey-text">Edit profile</button>
-  </div>
-  <div class="container row">
-    <p class="bio col s5  offset-s2"> Award winning novelist, loves DIY</p>
-  </div>
-  <div class="container row">
-     <ul class="followers-link" >
-       <li><a class="grey-text col offset-s2" href="#">10 following</a></li>
-       <li><a class="grey-text col" href="#">247 followers</a></li>
-     </ul> 
-  </div>
-  <div class="profpic row">
-    <img class="col offset-s7" src="img/prof.png">
-  </div>
-  <div class="container underline">
-  </div>
-</div>
-<!-- endof-profile details----->
+  <main class="conatiner">
+    <!-- profile details----->
+    <div class="row">
+      <div class="col m6 s12 offset-m3 profile">
+          <div class="user-info">
+            <div class="user-detail">
+              <h4 class="username">Username</h4>
+              <button class="waves-effect waves-light btn  btn-flat white grey-text">Edit profile</button>
+            </div>
+            <p class="bio offset-s2"> Award winning novelist, loves DIY</p>
 
+            <ul class="followers-link">
+              <li><a class="grey-text p-r-30" href="#">10 following</a></li>
+              <li><a class="grey-text" href="#">247 followers</a></li>
+            </ul>
+          </div>
+          <div class="avatar-wrapper">
+            <img class="img-circle avatar" src="img/prof.png">
+          </div>
+        </div>
+      </div>
+    <!-- endof-profile details----->
 
-  
-          
-
-    <!--JavaScript at end of body for optimized loading-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-      //sidenav
-      const sideNav = document.querySelector('.sidenav');
-      M.Sidenav.init(sideNav,{});
-    </script>
-  </body>
-</html>
-<!-- <nav class="z-depth-0">
-  <div class="nav-wrapper row">
-    <a href="#" class="brand-logo black-text col s6 offset-s2"><img src="logo.png"> Authors Haven</a>
-    <div class="navicons">
-        <i class="material-icons medium grey-text col s6 offset-s8">search</i>
+    <!-- profile articles -->
+    <div class="profile-articles">
+      <div class="row">
+        <div class="col s12 m6 offset-m3">
+          <div class="card hoverable">
+            <div class="card-content">
+              <div class="author-info">
+                <img class="avatar-small" src="img/prof.png">
+                <div class="article-time">
+                  <p>Username</p>
+                  <div class="article-time--details">
+                    <p>Jul 13</p><span class="r-l-spacer">.</span><p>2 min</p>
+                  </div>
+                </div>
+              </div>
+              <span class="article-title">When things get cosy</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="card-action">
+              <ul class="grey-text actions">
+                <li><i class="material-icons teal-text">thumb_up</i>2</li>
+                <li><i class="material-icons">thumb_down</i>329</li>
+                <li><i class="material-icons">bookmark_border</i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     
     <ul id="nav-mobile" class="right hide-on-med-and-down black-text">
@@ -300,3 +326,22 @@
   </div>
  
 </nav> -->
+  </main>
+
+
+
+
+
+
+
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    //sidenav
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav, {});
+  </script>
+</body>
+
+</html>
