@@ -23,3 +23,30 @@ h4.popular {
 	text-decoration: underline;
 	margin-left: 40px;
 }
+.modal{
+   text-align:center;
+   width: 55%;
+   background-color: rgb(219, 235, 235)
+}
+.modal-content p{
+  margin: 1% 25%;
+  text-align:center;
+  font: 18px "Robot";
+}
+.mdl-footer {
+  text-align:center;
+  background-color:rgb(219, 235, 235)
+}
+.btn-social {
+  width: 45%;
+  margin: 2% 0%;
+}
+
+.img-left{
+  float:left;
+  padding: 2%;
+}
+.btn-text-social {
+  float:left;
+  color: black;
+}
