@@ -82,7 +82,6 @@ button{
   font-family: Athelas,'Times New Roman';
   font-size: 1.3rem
  }
- /* ------------------------------------ profile articles  */
  .article-title{
   font-family: Lato;
   font-weight: bolder;
@@ -143,6 +142,9 @@ button{
   display: flex;
   margin-left: 20px;
   flex-direction: column;
+}
+.article-time a{
+  color: #000000;;
 }
 
 .author-info {
