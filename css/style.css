@@ -240,3 +240,19 @@ h4.popular {
   float:left;
   color: black;
 }
+.articles-landing{
+margin-top: 20px;
+display: flex;
+justify-content:space-between;
+}
+.articles-landing .card {
+  margin:0px !important;
+}
+.articles-landing .card .card-action ul{
+  margin: 0px; 
+}
+.articles-landing .card .card-action ul li{
+  display: inline;
+  padding: 0px 10px;
+  margin: 0px; 
+}
