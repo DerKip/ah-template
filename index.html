@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
@@ -24,8 +24,10 @@
             </a>
             <ul class="right hide-on-med-and-down grey-text">
                 <li><i class="material-icons">search</i></li> 
-                <li><a class="waves-effect waves-light btn white teal-text">Sign in</a></li>
-                <li><a class="waves-effect waves-light btn white teal-text">Get started</a></li>  
+                <li><a class="waves-effect waves-light btn white teal-text
+                    modal-trigger" href="#modal1">Sign in</a></li>
+                <li><a class="waves-effect waves-light btn white teal-text
+                    modal-trigger" href='#modal2'>Get started</a></li>  
             </ul>
           </div>
         </div>
@@ -37,16 +39,251 @@
         <li><a href="">Profile</a></li>
         <li><a href="">Home</a></li>
     </ul>
-  
+        <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Welcome back.</h4>
+          <p>
+            Sign in to access your personalized homepage, follow authors and
+            topics you love, and clap for stories that matter to you.
+            <div class="btn white darken-4 col s10 m4 btn-social">
+               <a href="/users/google-oauth/" style="text-transform:none">
+                  <div class="img-left">
+                      <img width="20px" alt="Google &quot;G&quot; Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"/>
+                  </div>
+                  <div class="btn-text-social">
+                     Signin with Google
+                  </div>
+               </a> 
+            </div>
+            </br>
+            <!--FaceBook Button -->
+            <div class="btn white darken-4 col s10 m4 btn-social">
+               <a href="/users/google-oauth/" style="text-transform:none">
+                  <div class="img-left">
+                      <img width="20px" alt="Facebook &quot;G&quot; Logo" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg"/>
+                  </div>
+                  <div class="btn-text-social">
+                     Signin with Facebook
+                  </div>
+               </a> 
+            </div>
+            </br>
+            <!-- Twitter authentication -->
+            <div class="btn white darken-4 col s10 m4 btn-social">
+               <a href="/users/google-oauth/" style="text-transform:none">
+                  <div class="img-left">
+                    <img width="20px" alt="Twitter &quot;G&quot; Logo"
+                                      src="./images/if_twitter_173834.png"/>
+                  </div>
+                  <div class="btn-text-social">
+                     Signin with Facebook
+                  </div>
+               </a> 
+            </div>
+            </br>
+            <!--Email authentication -->
+            <div class="btn white darken-4 col s10 m4 btn-social">
+               <a href="#modal2" class="modal-trigger modal-close" style="text-transform:none">
+                  <div class="img-left">
+                    <img width="20px" alt="Twitter &quot;G&quot; Logo"
+                                      src="./images/email_envelop.jpg"/>
+                  </div>
+                  <div class="btn-text-social">
+                     Signin with email
+                  </div>
+               </a> 
+            </div>
+            <p>
+            No account? <a href="#modal2" class="modal-trigger modal-close" style="font-size: 16px;">Create One</a>
+            </p>
+            <p style="font-size: 15px;">
+              To make Medium work, we log user data and share it with service providers. Click "Sign in" above to accept Medium’s
+              </br>
+            </p>
+            <a href="#" style="color:black;"> <u>Terms of Service </u> </a> & <a href="#"
+                                                   style="color:black"><u>Privacy
+                                                     Policy.</u></a>
+          </p>
+        </div>
+        </div> 
           
-
+      
+      <!--Signup Model -->
+        <!-- Modal Structure -->
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <h4>Join Authors Haven</h4>
+          <p>
+            Create an account to personalize your homepage, follow your favorite authors and publications, 
+            applaud stories you love, and more.
+              
+               <div class="row">
+                  <form class="col s12" style="margin-bottom: 0px;">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input placeholder="" id="first_name" type="text" class="validate">
+                        <label for="first_name">Username</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-bottom:0px;">
+                      <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+            </button> 
+            <p>
+            Already have an account?  <a  class="modal-trigger modal-close" href="#modal1" style="font-size: 16px;">Sign
+            in</a>
+            </p>
+          </p>
+        </div>
+        </div> 
     <!--JavaScript at end of body for optimized loading-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
     <script>
       //sidenav
       const sideNav = document.querySelector('.sidenav');
       M.Sidenav.init(sideNav,{});
-    </script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems, {});
+      });
+     </script>
+     <div class="row">
+      <div class="col m6 offset-m1">
+          <div class="card">
+              <div class="card-content">
+                  <span class="card-title">The Girl with Dragon Tatoo</span>
+                  <p>The girl with a dragon tatoo has been in the town.
+                      Everyone guy had his eyes ogling at her.</p>
+              </div>
+              <div class="card-action">
+                  <a href="#">Daniel Mutuba</a>
+                  <a href="#"></a>
+              </div>
+          </div>
+      </div>
+      <div class="col m3 offset-m1">
+          <div class="card">
+              <div class="card-content">
+                  <span class="card-title">The Girl with Dragon Tatoo</span>
+                  <p>The girl with a dragon tatoo has been...</p>
+              </div>
+              <div class="card-action">
+                  <a href="#">Daniel Mutuba</a>
+                  <a href="#"></a>
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+  <hr style="width: 85%; height: 0.1%" />
+  <div class="row">
+      <div class="col m6 offset-m1">
+          <div class="card">
+              <div class="card-content">
+                  <span class="card-title">The Girl with Dragon Tatoo</span>
+                  <p>The girl with a dragon tatoo has been in the town.
+                      Everyone guy had his eyes ogling at her.</p>
+              </div>
+              <div class="card-action">
+                  <a href="#">Daniel Mutuba</a>
+                  <a href="#"></a>
+              </div>
+          </div>
+          <br>
+          <div class="card">
+              <div class="card-content">
+                  <span class="card-title">The Girl with Dragon Tatoo</span>
+                  <p>The girl with a dragon tatoo has been in the town.
+                      Everyone guy had his eyes ogling at her.</p>
+              </div>
+              <div class="card-action">
+                  <a href="#">Daniel Mutuba</a>
+                  <a href="#"></a>
+              </div>
+          </div>
+          <br>
+          <div class="card">
+              <div class="card-content">
+                  <span class="card-title">The Girl with Dragon Tatoo</span>
+                  <p>The girl with a dragon tatoo has been in the town.
+                      Everyone guy had his eyes ogling at her.</p>
+              </div>
+              <div class="card-action">
+                  <a href="#">Daniel Mutuba</a>
+                  <a href="#"></a>
+              </div>
+          </div>
+          <br>
+          <div class="card">
+              <div class="card-content">
+                  <span class="card-title">The Girl with Dragon Tatoo</span>
+                  <p>The girl with a dragon tatoo has been in the town.
+                      Everyone guy had his eyes ogling at her.</p>
+              </div>
+              <div class="card-action">
+                  <a href="#">Daniel Mutuba</a>
+                  <a href="#"></a>
+              </div>
+          </div>
+      </div>
+      <div class="col m3 offset-m1">
+          <div class="">
+              <div class="card-content">
+                  <h4 class="popular">Popular on Haven</h4>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-content">
+                  <span class="card-title">The Girl with Dragon Tatoo</span>
+                  <p>The girl with a dragon tatoo has been in the town.
+                      Everyone guy had his eyes ogling at her.</p>
+              </div>
+              <div class="card-action">
+                  <a href="#">Daniel Mutuba</a>
+                  <a href="#"></a>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-content">
+                  <span class="card-title">The Girl with Dragon Tatoo</span>
+                  <p>The girl with a dragon tatoo has been in the town.
+                      Everyone guy had his eyes ogling at her.</p>
+              </div>
+              <div class="card-action">
+                  <a href="#">Daniel Mutuba</a>
+                  <a href="#"></a>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-content">
+                  <span class="card-title">The Girl with Dragon Tatoo</span>
+                  <p>The girl with a dragon tatoo has been in the town.
+                      Everyone guy had his eyes ogling at her.</p>
+              </div>
+              <div class="card-action">
+                  <a href="#">Daniel Mutuba</a>
+                  <a href="#"></a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  </div>
   </body>
 </html>
 <!-- <nav class="z-depth-0">
