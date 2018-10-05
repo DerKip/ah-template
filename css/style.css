@@ -1,6 +1,9 @@
-body{
-  font-family: "Lato";
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+*, html, body {
+  font-family: 'Raleway', sans-serif;
 }
+
 .navbar-fixed{
   box-shadow: 0px 0.5px rgb(224, 223, 223);
 }
@@ -11,6 +14,17 @@ font-family: Athelas,'Times New Roman';
   text-transform: none;
   border-radius: 4px;
   box-shadow: none;
+  border: 1px solid #aaa;
+}
+
+.btn:hover {
+  text-transform: none;
+  border-radius: 4px;
+  box-shadow: none;
+  border: 1px solid teal;
+  background-color: teal!important;
+  color: #fff!important;
+
 }
 .nav-wrapper i{
   padding: 2px 10px 0px 10px ;
@@ -19,34 +33,157 @@ i:hover{
   cursor: pointer;
   color: #000;
 }
-h4.popular {
-	text-decoration: underline;
-	margin-left: 40px;
+.small-profile{
+  border-radius: 100%;
+  width: 30px;
+  margin: 20px 10px ;
 }
-.modal{
-   text-align:center;
-   width: 55%;
-   background-color: rgb(219, 235, 235)
+.profile-header{
+  padding-top: 1.5%;
 }
-.modal-content p{
-  margin: 1% 25%;
-  text-align:center;
-  font: 18px "Robot";
+.profile-header h4{
+  font-weight: bold;
 }
-.mdl-footer {
-  text-align:center;
-  background-color:rgb(219, 235, 235)
+.profile-header button{
+  margin-top: 25px;
 }
-.btn-social {
-  width: 45%;
-  margin: 2% 0%;
+.profile-header .row{
+  margin-bottom: 0%;
+  padding: 0px 15px;
+}
+button{
+  border: 1px solid teal;
+}
+ button:hover{
+  border: 0px solid grey;
 }
 
-.img-left{
-  float:left;
-  padding: 2%;
+.profile-header p.bio{
+  margin:-2px;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.btn-text-social {
-  float:left;
-  color: black;
+.followers-link li{
+  display: inline;
+}
+.followers-link li :hover{
+  text-decoration: underline;
+}
+.profile-header .container.underline{
+  border: 0.5px solid rgb(218, 218, 218);
+  width: 44%;
+  padding: 0%;
+  margin-top: 1%;
+ }
+ h6{
+   font-weight: bold;
+ }
+ .profile-articles{
+  font-family: Athelas,'Times New Roman';
+  font-size: 1.3rem
+ }
+ .article-title{
+  font-family: Lato;
+  font-weight: bolder;
+}
+.profile-articles .row .card-action ul{
+  padding:0px;
+  margin: 0px;
+}
+
+ .profile-articles .row .card-action ul li{
+   display: inline;
+   font-family:Lato;
+   font-size: 0.8em;
+   padding:0px 10px;
+ }
+ .article-small-profile{
+  border-radius: 50%;
+  width: 50px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.user-detail {
+  display: flex;
+  align-items: center;
+}
+
+.user-detail > button {
+  margin-left: 30px;
+}
+
+.username{
+  margin: 0;
+  padding: 0;
+}
+
+.p-r-30 {
+  padding-right: 20px!important;
+}
+
+.article-time {
+  display: flex;
+  margin-left: 20px;
+  flex-direction: column;
+}
+.article-time a{
+  color: #000000;;
+}
+
+.author-info {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.avatar-small {
+  height:50px;
+  width:50px;
+  border-radius: 50%;
+}
+
+.article-time--details {
+  display: flex;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.r-l-spacer {
+  padding-right: 10px;;
+  padding-left: 10px;;
+}
+
+.avatar-name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.edit-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
