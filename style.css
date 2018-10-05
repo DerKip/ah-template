@@ -1,0 +1,32 @@
+body{
+  font-family: "Lato";
+}
+.navbar{
+  box-shadow: 0px 0.5px rgb(224, 223, 223);
+}
+.nav-wrapper .brand-logo{
+font-family: Athelas,'Times New Roman';
+}
+.btn {
+  text-transform: none;
+  border-radius: 4px;
+  box-shadow: none;
+}
+.nav-wrapper i{
+  padding: 2px 10px 0px 10px ;
+}
+i:hover{
+  cursor: pointer;
+  color: #000;
+}
+.nav-tags{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-wrapper ul .nav-tags li a{
+color :  rgb(161, 161, 161);
+}
+.nav-wrapper  ul .nav-tags li a:hover{
+ background-color:#fff;
+ color :  rgb(10, 10, 10);
+}
