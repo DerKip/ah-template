@@ -267,7 +267,7 @@
           <div class="user-info">
             <div class="user-detail">
               <h4 class="username">Username</h4>
-              <button class="waves-effect waves-light btn  btn-flat white grey-text">Edit profile</button>
+              <button data-target="modal1" class="waves-effect waves-light btn  btn-flat white grey-text modal-trigger">Edit profile</button>
             </div>
             <p class="bio offset-s2"> Award winning novelist, loves DIY</p>
 
@@ -388,6 +388,44 @@
             </div>
           </div>
         </div>
+        <div id="modal1" class="modal">
+            <!-- <div class="modal-header">
+               <h4 class="username">Edit Profile</h4>
+            </div>
+            <hr/> -->
+            <div class="modal-content">
+              <div class="avatar-name">
+                <div class="edit-name">
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate" value="Mary Jane">
+                        <!-- <label for="last_name">Username</label> -->
+                      </div><span class="fa fa-edit"></span>
+                </div>
+                  <div class="avatar-wrapper">
+                      <img class="img-circle avatar edit-avatar" src="img/prof.png">
+                  </div>
+                </div>
+                <div>
+                  <h4 class="username">Bio</h4>
+                  <div class="row">
+                      <form class="col s12">
+                        <div class="row">
+                          <div class="input-field col s6">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea id="icon_prefix2" class="materialize-textarea"> Award winning novelist, loves DIY</textarea>
+                            <!-- <label for="icon_prefix2">First Name</label> -->
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+                <button data-target="modal1" class="waves-effect waves-light btn  btn-flat white grey-text">Apply</button>
+                <button data-target="modal1" class="waves-effect waves-light btn  btn-flat white grey-text">Cancel</button>
+            </div>
+          </div>
+          
   <!-- profile articles -->
   </main>
 
@@ -405,6 +443,12 @@
     //sidenav
     const sideNav = document.querySelector('.sidenav');
     M.Sidenav.init(sideNav, {});
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems, {});
+      });
   </script>
 </body>
 
