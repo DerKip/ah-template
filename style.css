@@ -30,3 +30,19 @@ color :  rgb(161, 161, 161);
  background-color:#fff;
  color :  rgb(10, 10, 10);
 }
+
+.action-icons {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+
+.icons{
+  position: fixed;
+  top: 180px;
+  left: -950px; 
+}
+
+.add-comment {
+  float: right;
+}

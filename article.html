@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
-
   <body>
     <title>Authors Haven</title>
     <div class="navbar-fixed ">
@@ -76,15 +75,15 @@
       <p class="flow-text">Good night, sweet prince.</p>
   </div>
   <div class="container">
-    <img class="materialboxed" width="850" src="images/sample-1.jpeg">
-    <p class="flow-text">MoviePass, the monthly $10 subscription service that enabled me to see Baywatch in theaters guilt-free, is no more.
+    <img class="materialboxed" width="850" height="500" src="images/sample-1.jpeg">
+    <p style="font-size:16px">MoviePass, the monthly $10 subscription service that enabled me to see Baywatch in theaters guilt-free, is no more.
          Less than a month ago, it was a thriving, totally economically unsustainable way of taking money directly from brain-addled venture capitalists
           and putting it towards your third viewing of The Last Jedi. Now, all that remains is a sad and empty husk, a shell of its former self. MoviePass is dead. 
           Long live MoviePass.</p>
-    <p class="flow-text">In its early days, MoviePass allowed users to see unlimited movies at participating theaters for prices that ranged as high as $100 and as low as $35 a month. At that point, it was still a niche service, catering largely to cinephile audiences in cities like New York, where ticket prices can creep above the $20 mark.</p> 
-    <p class="flow-text">But the service wasn’t growing, so MoviePass CEO and Netflix co-founder Mitch Lowe decided to take drastic measures: Namely, dousing the company in gasoline and driving it off the edge of the Grand Canyon with a lit cigarette in his mouth.</p>   
-    <p class="flow-text">Last summer, MoviePass dropped its unlimited plan to $10, and suddenly everyone’s mom was wearing a turtleneck sweater and talking about the deeper meaning of Hereditary. For a brief and exhilarating window, the deluded millionaires behind MoviePass democratized moviegoing.</p>   
-    <p class="flow-text">There’s a big studio myth that audiences aren’t going to the movies because there are too many other options because Netflix and Amazon and the Golden Age of TV are drawing people away from movie theaters. It’s a myth that MoviePass punctured. People still want to see movies; the issue is that going to the movies is just too prohibitively expensive to justify.</p>        
+    <p style="font-size:16px">In its early days, MoviePass allowed users to see unlimited movies at participating theaters for prices that ranged as high as $100 and as low as $35 a month. At that point, it was still a niche service, catering largely to cinephile audiences in cities like New York, where ticket prices can creep above the $20 mark.</p> 
+    <p style="font-size:16px">But the service wasn’t growing, so MoviePass CEO and Netflix co-founder Mitch Lowe decided to take drastic measures: Namely, dousing the company in gasoline and driving it off the edge of the Grand Canyon with a lit cigarette in his mouth.</p>   
+    <p style="font: size 16px">Last summer, MoviePass dropped its unlimited plan to $10, and suddenly everyone’s mom was wearing a turtleneck sweater and talking about the deeper meaning of Hereditary. For a brief and exhilarating window, the deluded millionaires behind MoviePass democratized moviegoing.</p>   
+    <p style="font-size:16px">There’s a big studio myth that audiences aren’t going to the movies because there are too many other options because Netflix and Amazon and the Golden Age of TV are drawing people away from movie theaters. It’s a myth that MoviePass punctured. People still want to see movies; the issue is that going to the movies is just too prohibitively expensive to justify.</p>        
   </div>
   <div class="container">
         <div class="row">
@@ -159,8 +158,61 @@
               </div>
       </div>
   </div>
+  <div class="icons">
+        <div class="container">
+                <div class="row action-icons">
+                    <div class="col s12 m1">
+                          <div class="card">
+                                  <div class="card-image">
+                                      <img src="images/like.png" alt="" class="circle">
+                                  </div> 
+                          </div>
+                    </div>
+                    <div class="col s12 m1">
+                          <div class="card">
+                                  <div class="card-image">
+                                      <img src="images/twitter.png" alt="" class="circle">
+                                  </div>
+                          </div>
+                    </div>
+                    <div class="col s12 m1">
+                          <div class="card">
+                                  <div class="card-image">
+                                      <img src="images/facebook.png" alt="" class="circle">
+                                  </div>
+                          </div>
+                    </div>
+                    <div class="col s12 m1">
+                          <div class="card">
+                                  <div class="card-image">
+                                      <img src="images/favourite.png" alt="" class="circle">
+                                  </div>
+                          </div>
+                    </div>
+                    <div class="col s12 m1">
+                          <div class="card">
+                                  <div class="card-image">
+                                      <img src="images/bookmark.png" alt="" height="50px" class="circle">
+                                  </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+  </div>
   <div class="container">
-      <div class="row"></div>
+      <h5>Comments</h5>
+      <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                      <textarea id="textarea1" class="materialize-textarea"></textarea>
+                       <label for="textarea1">Comment</label>
+                      <a class="btn-floating btn-large waves-effect waves-light red add-comment"><i class="material-icons">add</i></a>
+                </div>
+              </div>
+            </form>
+            <a class="waves-effect waves-light btn-large">View Comments</a>
+          </div>
   </div>
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
